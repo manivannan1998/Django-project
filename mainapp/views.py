@@ -118,7 +118,7 @@ def log_done(request):
         user = auth.authenticate(username=username, password=password)
         if user is not None:
             auth.login(request, user)
-            return render(request, 'reg_done.html')
+            return render(request, 'log_done.html')
 
         else:
             return render(request, 'sorry.html')
